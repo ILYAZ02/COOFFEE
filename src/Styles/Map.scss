@@ -1,0 +1,149 @@
+.map{
+  height: 100vh;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  &_container{
+    h1{
+      display: flex;
+      justify-content: center;
+      color: black;
+      text-decoration: underline solid #a23c09;
+      text-underline-offset: 15px;
+      font-size: 40px;
+      font-family: "Noto Sans";
+      font-weight: 400;
+    }
+
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
+    &_content{
+      display: flex;
+      align-items: center;
+      column-gap: 200px;
+
+      &_item{
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+
+        p{
+          height: 75px;
+          font-size: 80px;
+          color: #a23c09;
+
+        }
+
+        &_text{
+          display: flex;
+          flex-direction: column;
+          b{
+            color: black;
+            font-size: 24px;
+            font-family: "Noto Sans";
+            font-weight: 400;
+          }
+          span{
+            color: black;
+            font-size: 20px;
+            font-family: "Noto Sans";
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    iframe{
+      border-radius: 5px;
+      border: none;
+    }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .map{
+    height: 100vh;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    &_container{
+      height: 100vh;
+      width: 100%;
+      max-width: 360px;
+      margin: 0 auto;
+      h1{
+        font-size: 26px;
+        text-underline-offset: 8px;
+      }
+      &_content{
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: start;
+        &_item{
+          align-items: start;
+          &_text{
+            b{
+              font-size: 20px;
+            }
+            span{
+              font-size: 18px;
+            }
+          }
+        }
+
+      }
+      iframe{
+        width: 360px;
+        height: 220px;
+      }
+    }
+  }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .map{
+    height: 130vh;
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    &_container{
+      height: 130vh;
+      width: 100%;
+      max-width: 768px;
+      margin: 0 auto;
+      h1{
+        font-size: 30px;
+        text-underline-offset: 8px;
+      }
+      &_content{
+        flex-direction: column;
+        row-gap: 25px;
+        align-items: start;
+        &_item{
+          align-items: start;
+          &_text{
+            b{
+              font-size: 35px;
+            }
+            span{
+              font-size: 30px;
+            }
+          }
+        }
+
+      }
+      iframe{
+        width: 700px;
+        height: 320px;
+      }
+    }
+  }
+}

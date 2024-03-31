@@ -1,0 +1,148 @@
+.malfunctions{
+  height: 120vh;
+
+  .container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    h1{
+      color: black;
+      text-decoration: underline solid #a23c09;
+      text-underline-offset: 15px;
+      font-size: 40px;
+      font-family: "Noto Sans";
+      font-weight: 400;
+      margin-bottom: 50px;
+    }
+
+    &_map{
+      height: 100vh;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      row-gap: 40px;
+
+
+      &_product{
+        background-color: white;
+        display: flex;
+        align-items: center;
+        box-shadow: 10px 10px 18px #8c8a8a;
+        border-radius: 5px;
+        padding: 0 10px;
+        &_text{
+          display: flex;
+          flex-direction: column;
+          p{
+            width: 150px;
+            font-size: 20px;
+            font-family: "Noto Sans";
+            font-weight: 600;
+          }
+          span{
+            font-size: 20px;
+            color: red;
+          }
+        }
+    }
+
+
+      img{
+        width: 180px;
+      }
+    }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .malfunctions{
+    height: 230vh;
+
+    .container{
+      justify-content: flex-start;
+      height: 230vh;
+      width: 100%;
+      max-width: 1300px;
+      margin: 0 auto;
+
+      h1{
+        margin-top: 50px;
+        font-size: 26px;
+        text-underline-offset: 8px;
+        text-align: center;
+      }
+
+      &_map{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        row-gap: 20px;
+        &_product{
+
+          &_text{
+            p{
+              font-size: 14px;
+            }
+            span{
+              font-size: 14px;
+            }
+          }
+        }
+        img{
+          width: 120px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .malfunctions{
+    height: 830vh;
+
+    .container{
+      justify-content: flex-start;
+      height: 30vh;
+      width: 100%;
+      max-width: 1300px;
+      margin: 0 auto;
+
+      h1{
+        margin-top: 50px;
+        font-size: 28px;
+        text-underline-offset: 8px;
+        text-align: center;
+      }
+
+      &_map{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        row-gap: 40px;
+        &_product{
+
+          &_text{
+            p{
+              font-size: 19px;
+              padding: 10px 0px;
+            }
+            span{
+              font-size: 18px;
+            }
+          }
+        }
+        img{
+          width: 540px;
+        }
+      }
+    }
+  }
+}

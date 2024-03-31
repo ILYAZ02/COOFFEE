@@ -1,0 +1,138 @@
+.titlePage{
+  height: 100vh;
+  background-image: url("../Images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+
+  .container{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
+    row-gap: 30px;
+
+    h2{
+      color: white;
+      font-size: 54px;
+      font-family: "Noto Sans";
+      font-weight: 500;
+    }
+
+    p{
+      color: white;
+      font-size: 20px;
+      font-family: "Noto Sans";
+      font-weight: 500;
+    }
+
+    span{
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+      color: white;
+      font-size: 20px;
+      font-family: "Noto Sans";
+      font-weight: 500;
+      &::before{
+        content: '';
+        border: none;
+        padding: 3px 40px;
+        background-color: #a23c09;
+      }
+    }
+
+    button{
+      background-color: #a23c09;
+      height: 60px;
+      width: 300px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      a{
+        color: white;
+        font-size: 20px;
+        font-family: "Noto Sans";
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .titlePage{
+    height: 80vh;
+    max-width: 360px;
+    margin: 0 auto;
+    background-color: #a23c09;
+    .container{
+      height: 60vh;
+      width: 100%;
+      max-width: 360px;
+      margin: 0 auto;
+      padding: 20px 0;
+      h2{
+        font-size: 32px;
+      }
+
+      p{
+        font-size: 10px;
+      }
+      span{
+        font-size: 10px;
+        &::before{
+          padding: 1.5px 20px;
+        }
+      }
+      button{
+        height: 40px;
+        width: 150px;
+
+        a{
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 920px) {
+  .titlePage{
+    height: 95vh;
+    max-width: 720px;
+    margin: 0 auto;
+    background-color: #a23c09;
+   
+    .container{
+      height:90vh;
+      width: 100%;
+      max-width: 768px;
+      margin: 0 auto;
+      padding: 80px 10px;
+      h2{
+        font-size: 38px;
+      }
+
+      p{
+        font-size: 18px;
+      }
+      span{
+        font-size: 20px;
+        &::before{
+          padding: 1.5px 20px;
+        }
+      }
+      button{
+        height: 60px;
+        width: 155px;
+
+        a{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

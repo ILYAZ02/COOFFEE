@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+/*//colorbtn: #E69874;*/
+    /*//colortext: #E7E7E9;*/
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+
+}
+body{
+    width: 100%;
+    max-width: 1490px;
+    margin: 0 auto;
+}
